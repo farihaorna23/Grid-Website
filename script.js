@@ -16,7 +16,19 @@ function addR() {
 }
 //Add a column
 function addC() {
-    alert("Clicked Add Col")
+    
+    let rows=document.querySelectorAll("tr");//select all the rows cause we need to add cols
+
+    //loop through the rows
+    for(let i=0; i<numRows; i++)
+    {
+        let col=document.createElement("td");//create td for it
+        col.classList.add("td");//add className to the td
+    }
+
+    
+    
+    //alert("Clicked Add Col")
 }
 
 //Remove a row
