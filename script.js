@@ -4,7 +4,14 @@ let colorSelected;
 
 //Add a row
 function addR() {
-    alert("Clicked Add Row")
+    numRows++;//increment
+    
+    let row= document.createElement("tr"); //<tr></tr>
+    row.classList.add("tr"); //<tr className="tr> </tr>
+    let col= document.createElement("td");// <td></td>
+    add.appendChild(col);// <tr> <td> </td> </tr>
+    document.querySelector("grid").appendChild(add);
+
 }
 //Add a column
 function addC() {
