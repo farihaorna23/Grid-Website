@@ -9,8 +9,9 @@ function addR() {
     let row= document.createElement("tr"); //<tr></tr>
     row.classList.add("tr"); //<tr className="tr> </tr>
     let col= document.createElement("td");// <td></td>
-    add.appendChild(col);// <tr> <td> </td> </tr>
-    document.querySelector("grid").appendChild(add);
+    col.classList.add("td"); //<td className=td> </td>
+    row.appendChild(col);// <tr className="tr"> <td className="td"> </td> </tr>
+    document.getElementById("grid").appendChild(row);//append the entirity of tr to the class grid
 
 }
 //Add a column
