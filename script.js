@@ -24,6 +24,7 @@ function addC() {
     {
         let col=document.createElement("td");//create td for it
         col.classList.add("td");//add className to the td
+        rows[i].appendChild(col); //for each current rows append the col
     }
 
     
