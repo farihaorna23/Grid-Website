@@ -96,6 +96,7 @@ function clearAll(){
     for(let i=0; i<squares.length; i++)
     {
         //go through each of them and set them to white
+        squares[i].style.backgroundColor="white";
     }
     
     //alert("Clicked Clear All")
