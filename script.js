@@ -64,15 +64,17 @@ function selected(){
 
 function AddEventListeners()
 {
-    //get the td
+          
+    //get all the td
     let squares=document.querySelectorAll("td");
     
     //go through each of them
     for(let i=0; i<squares.length; i++)
-    {
-        squares[i].addEventListener("click", (event)=>{
-            //event
-        }
+   {
+       //when clicked on targeted box, it will set it to the color selected 
+       squares[i].addEventListener("click", (event)=>{
+        event.target.style.backgroundColor=colorSelected;
+        })
     }
 }
 
