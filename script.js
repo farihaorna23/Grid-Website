@@ -62,6 +62,20 @@ function selected(){
     console.log(colorSelected);
 }
 
+function AddEventListeners()
+{
+    //get the td
+    let squares=document.querySelectorAll("td");
+    
+    //go through each of them
+    for(let i=0; i<squares.length; i++)
+    {
+        squares[i].addEventListener("click", (event)=>{
+            //event
+        }
+    }
+}
+
 function fill(){
     alert("Clicked Fill All")
 }
