@@ -34,7 +34,12 @@ function addC() {
 
 //Remove a row
 function removeR() {
-    alert("Clicked Remove Row")
+    //select the grid id where rows are located
+    let del=document.getElementById("grid");
+    let remove= del.lastElementChild; //will get the last element.
+    del.removeChild(remove);//remove the element from the grid
+    
+    //alert("Clicked Remove Row")
 }
 //Remove a column
 function removeC() {
