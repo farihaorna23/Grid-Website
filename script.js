@@ -6,13 +6,13 @@ let colorSelected;
 function addR() {
     numRows++;//increment
     
-    let row= document.createElement("tr"); //<tr></tr>
-    row.classList.add("tr"); //<tr className="tr> </tr>
-    let col= document.createElement("td");// <td></td>
-    col.classList.add("td"); //<td className=td> </td>
-    row.appendChild(col);// <tr className="tr"> <td className="td"> </td> </tr>
+    let row= document.createElement("tr"); //create element tr
+    row.classList.add("tr"); //add className tr to tr
+    let col= document.createElement("td");// create element td
+    col.classList.add("td"); //add className td to td
+    row.appendChild(col);//add td to tr
     document.getElementById("grid").appendChild(row);//append the entirity of tr to the class grid
-
+    AddEventListeners();//added helper function to it
 }
 //Add a column
 function addC() {
@@ -27,7 +27,7 @@ function addC() {
         rows[i].appendChild(col); //for each current rows append the col
     }
 
-    
+    AddEventListeners();
     
     //alert("Clicked Add Col")
 }
