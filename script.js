@@ -43,16 +43,16 @@ function removeR() {
 }
 //Remove a column
 function removeC() {
-    //select all the rows 
-    let rows=document.querySelectorAll("tr");
+    //select all the rows
+    let rows= document.querySelectorAll("tr");
     
-    //go through each rows 
-    for(let i=0; i<newRows; i++)
-    {
-        //each rows lastElement box added
-        let last=rows[i].lastElementChild;
+    //go thrugh each rows
+    for(let i=0; i<rows.length; i++){
+        //get the last box in each row
+        let remove=rows[i].lastElementChild;
+        //then delete it
+        rows[i].removeChild(remove);
     }
-    
     
     //alert("Clicked Remove Col")
 }
