@@ -79,7 +79,14 @@ function AddEventListeners()
 }
 
 function fill(){
-    alert("Clicked Fill All")
+    //select all the td
+    let squares=document.querySelectorAll("td"); 
+    //then go through all of them and set it to the color to the selected color
+    for(let i=0; i<squares.length; i++)
+    {
+        squares[i].style.backgroundColor=colorSelected;
+    }
+    //alert("Clicked Fill All")
 }
 
 function clearAll(){
