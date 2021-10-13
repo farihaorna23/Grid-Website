@@ -90,7 +90,15 @@ function fill(){
 }
 
 function clearAll(){
-    alert("Clicked Clear All")
+    //Aim: have to turn every box into white.
+    //select all the td
+    let squares=document.querySelectorAll("td");
+    for(let i=0; i<squares.length; i++)
+    {
+        //go through each of them and set them to white
+    }
+    
+    //alert("Clicked Clear All")
 }
 
 function fillU(){
