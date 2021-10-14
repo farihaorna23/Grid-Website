@@ -103,5 +103,11 @@ function clearAll(){
 }
 
 function fillU(){
-    alert("Clicked Fill All Uncolored")
+    
+    //select all the tr
+    //go through and set it to the color selected only if td has no color
+
+    
+    
+    //alert("Clicked Fill All Uncolored")
 }
