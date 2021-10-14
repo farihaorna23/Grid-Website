@@ -109,7 +109,7 @@ function fillU(){
       //go through each of the td
     for(let i=0; i<squares.length; i++)
     {
-        if(!squares[i].style.backgroundColor)  //only if td has no color
+        if(!squares[i].style.backgroundColor || squares[i].style.backgroungColor=="white")  //only if td has no color or white color
         {
             squares[i].style.backgroundColor=colorSelected;//set it to the color selected
         }
