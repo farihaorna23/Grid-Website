@@ -103,5 +103,17 @@ function clearAll(){
 }
 
 function fillU(){
-    alert("Clicked Fill All Uncolored")
+    
+    //select all the tr
+    let squares=document.querySelectorAll("td")
+      //go through each of the td
+    for(let i=0; i<squares.length; i++)
+    {
+        if(!squares[i].style.backgroundColor || squares[i].style.backgroungColor=="white")  //only if td has no color or white color
+        {
+            squares[i].style.backgroundColor=colorSelected;//set it to the color selected
+        }
+    }
+    
+    //alert("Clicked Fill All Uncolored")
 }
